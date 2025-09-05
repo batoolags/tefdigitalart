@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  transition: background 0.3s;
+}
+.navbar.scrolled {
+  background: #6c63ff !important;
+}
+.navbar.scrolled .nav-link {
+  color: #fff !important;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://picsum.photos/1200/600?grayscale') center/cover no-repeat;
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Section title */
+.section-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #6c63ff;
+}
+
+/* Services */
+.service-box {
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.service-box:hover {
+  transform: translateY(-5px);
+  background: #f9f9ff;
+}
+
+/* Artists & Instructors */
+#artists img, #instructors img {
+  /* border: 4px solid #6c63ff; */
+  transition: transform 0.3s;
+}
+#artists img:hover, #instructors img:hover {
+  transform: scale(1.1);
+}
+
+/* About */
+.about-img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background: #6c63ff;
+  color: #fff;
+  padding: 20px 0;
+}
+/* Highlight Section */
+.highlight-section {
+  background: linear-gradient(135deg, #6c63ff, #3f3d56);
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+.highlight-section h2 {
+  font-size: 2rem;
+}
+.highlight-section p {
+  font-size: 1.2rem;
+}
+
+
+/* Fix circular images */
+.artist-img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.artist-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image proportion without distortion */
+  display: block;
+}
+
+/* Hover effects */
+.artist-card:hover .artist-img {
+  /* border-color: #0d6efd; */
+  transform: scale(1.05);
+}
+
+.artist-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.instructor-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ddd;       /* optional border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* soft shadow */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
