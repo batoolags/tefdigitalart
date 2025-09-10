@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DigitalArt</title>
   <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./src/bootstrap.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Custom CSS -->
@@ -16,17 +16,18 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="#"><img src="./imgs/logo.png" alt=""></a>
+    <a class="navbar-brand fw-bold text-primary" href="#"><img src="./src/imgs/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
         <li class="nav-item"><a class="nav-link" href="#instructors">Instructors</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
@@ -43,25 +44,73 @@
   </div>
 </section>
 
+<!-- about section -->
+<section class="py-5 bg-light" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- Left side image -->
+      <div class="col-md-6 text-center">
+        <img src="./src/imgs/About .jpg" 
+             alt="Digital Art" 
+             class="about-img img-fluid rounded shadow">
+      </div>
+
+      <!-- Right side content -->
+      <div class="col-md-6">
+        <h2 class="section-title mb-4">About DigitalArt</h2>
+        <p class="lead">
+          DigitalArt is a creative hub where imagination meets technology.  
+          We provide a platform for artists, designers, and learners to explore modern art forms 
+          like 2D/3D design, digital painting, and concept art.
+        </p>
+        <p>
+          Our mission is to empower creativity through workshops, online courses, and exhibitions.  
+          With a team of professional instructors, we help you sharpen your skills and bring your ideas to life.
+        </p>
+        <ul class="about-list">
+          <li>🎨 Creative 2D & 3D Art</li>
+          <li>🖌️ Digital Painting Workshops</li>
+          <li>🎥 Concept Art for Games & Films</li>
+          <li>🌍 Global Community of Artists</li>
+        </ul>
+        <a href="#courses" class="btn btn-primary mt-3">Explore Our Courses</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- Projects -->
 <section class="py-5" id="projects">
   <div class="container">
     <h2 class="text-center section-title">Our Projects</h2>
     <div class="row g-4" id="projectList">
       <!-- First 6 Projects -->
-      <div class="col-md-4 project"><div class="card"><img src="https://picsum.photos/400/300?random=11" class="card-img-top"><div class="card-body"><h5>Project 1</h5></div></div></div>
-      <div class="col-md-4 project"><div class="card"><img src="https://picsum.photos/400/300?random=12" class="card-img-top"><div class="card-body"><h5>Project 2</h5></div></div></div>
-      <div class="col-md-4 project"><div class="card"><img src="https://picsum.photos/400/300?random=13" class="card-img-top"><div class="card-body"><h5>Project 3</h5></div></div></div>
-      <div class="col-md-4 project"><div class="card"><img src="https://picsum.photos/400/300?random=14" class="card-img-top"><div class="card-body"><h5>Project 4</h5></div></div></div>
-      <div class="col-md-4 project"><div class="card"><img src="https://picsum.photos/400/300?random=15" class="card-img-top"><div class="card-body"><h5>Project 5</h5></div></div></div>
-      <div class="col-md-4 project"><div class="card"><img src="https://picsum.photos/400/300?random=16" class="card-img-top"><div class="card-body"><h5>Project 6</h5></div></div></div>
+      <div class="col-md-4 project"><div class="card"><img src="./src/projects/proj2.jpg" class="card-img-top"><div class="card-body"><h5>Project 1</h5></div></div></div>
+      <div class="col-md-4 project"><div class="card"><img src="./src/projects/proj3.jpg" class="card-img-top"><div class="card-body"><h5>Project 2</h5></div></div></div>
+      <div class="col-md-4 project"><div class="card"><img src="./src/projects/proj4.jpg" class="card-img-top"><div class="card-body"><h5>Project 3</h5></div></div></div>
+      <div class="col-md-4 project"><div class="card"><img src="./src/projects/proj7.jpg" class="card-img-top"><div class="card-body"><h5>Project 4</h5></div></div></div>
+      <div class="col-md-4 project"><div class="card"><img src="./src/projects/proj8.jpg" class="card-img-top"><div class="card-body"><h5>Project 5</h5></div></div></div>
+      <div class="col-md-4 project"><div class="card"><img src="./src/projects/proj9.jpg" class="card-img-top"><div class="card-body"><h5>Project 6</h5></div></div></div>
       <!-- Hidden More Projects -->
-      <div class="col-md-4 project d-none"><div class="card"><img src="https://picsum.photos/400/300?random=17" class="card-img-top"><div class="card-body"><h5>Project 7</h5></div></div></div>
-      <div class="col-md-4 project d-none"><div class="card"><img src="https://picsum.photos/400/300?random=18" class="card-img-top"><div class="card-body"><h5>Project 8</h5></div></div></div>
-      <div class="col-md-4 project d-none"><div class="card"><img src="https://picsum.photos/400/300?random=19" class="card-img-top"><div class="card-body"><h5>Project 9</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj5.jpg" class="card-img-top"><div class="card-body"><h5>Project 7</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj6.jpg" class="card-img-top"><div class="card-body"><h5>Project 8</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj1.jpg" class="card-img-top"><div class="card-body"><h5>Project 9</h5></div></div></div>
+
+  <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/10.png" class="card-img-top"><div class="card-body"><h5>Project 10</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj11.jpg" class="card-img-top"><div class="card-body"><h5>Project 11</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj12.jpg" class="card-img-top"><div class="card-body"><h5>Project 12</h5></div></div></div>
+
+ <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj13.jpg" class="card-img-top"><div class="card-body"><h5>Project 13</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj14.jpg" class="card-img-top"><div class="card-body"><h5>Project 14</h5></div></div></div>
+      <div class="col-md-4 project d-none"><div class="card"><img src="./src/projects/proj15.jpg" class="card-img-top"><div class="card-body"><h5>Project 15</h5></div></div></div>
+
+
     </div>
     <div class="text-center mt-4">
-      <button id="loadMore" class="btn btn-primary">Load More</button>
+      <button id="loadMore" class="btn btn-primary">View More</button>
     </div>
   </div>
 </section>
@@ -74,15 +123,15 @@
       
       <div class="col artist-card">
         <div class="artist-img">
-          <img src="./imgs/Screenshot 2025-09-04 134726.png" alt="Artist">
+          <img src="./src/imgs/komal.png" alt="Artist">
         </div>
-        <h5>Komal khan</h5>
+        <h5>Komal Malik</h5>
         <!-- <p>Digital Illustrator</p> -->
       </div>
 
       <div class="col artist-card">
         <div class="artist-img">
-          <img src="./imgs/batool..png" alt="Artist">
+          <img src="./src/imgs/batool..png" alt="Artist">
         </div>
         <h5>Batool Mursleen</h5>
         <!-- <p>3D Modeler</p> -->
@@ -90,15 +139,15 @@
 
       <div class="col artist-card">
         <div class="artist-img">
-          <img src="https://picsum.photos/200?random=23" alt="Artist">
+          <img src="./src/imgs/Sadia.png" alt="Artist">
         </div>
-        <h5>Sadia Radheed</h5>
+        <h5>Sadia Rasheed</h5>
         <!-- <p>Concept Artist</p> -->
       </div>
 
       <div class="col artist-card">
         <div class="artist-img">
-          <img src="./imgs/soniiii.png" alt="Artist">
+          <img src="./src/imgs/soniiii.png" alt="Artist">
         </div>
         <h5>Sonia khan</h5>
         <!-- <p>Visual Designer</p> -->
@@ -106,7 +155,7 @@
 
       <div class="col artist-card">
         <div class="artist-img">
-          <img src="https://picsum.photos/200?random=25" alt="Artist">
+          <img src="./src/imgs/humaira.jpg" alt="Artist">
         </div>
         <h5>Humaira Tailb</h5>
         <!-- <p>Art Instructor</p> -->
@@ -126,16 +175,16 @@
       
       <!-- Instructor 1 -->
       <div class="col-md-6 text-center">
-        <img src="https://picsum.photos/200?random=25" 
+        <img src="./src/imgs/teacher.png" 
              class="instructor-img mb-3" 
              alt="Instructor">
         <h5>Nadia Malik</h5>
-        <p>Specialist in Digital Arts with 10+ years of teaching experience.</p>
+        <p>Specialist in Digital Arts with 10 years of teaching experience.</p>
       </div>
       
       <!-- Instructor 2 -->
       <div class="col-md-6 text-center">
-        <img src="./imgs/WhatsApp Image 2025-09-05 at 12.01.35_b3cc655c.jpg" 
+        <img src="./src/imgs/Sir.jpg" 
              class="instructor-img mb-3" 
              alt="Instructor">
         <h5>Muhammad Zeshan</h5>
@@ -147,13 +196,9 @@
 </section>
 
 
-<!-- About + Services remain same -->
-<section class="py-5 bg-light" id="about">
-  <div class="container">
-    <h2 class="section-title">About Us</h2>
-    <p>We are a creative hub for artists and learners exploring the digital art revolution.</p>
-  </div>
-</section>
+
+
+
 
   <section class="py-5 highlight-section text-center text-white">
     <div class="container">
@@ -179,13 +224,13 @@
 </section>
 
 <!-- Contact Section -->
-<section class="py-5 bg-dark text-white" id="contact">
+<section class="py-5 bg-secondary text-white" id="contact">
     <div class="container">
       <h2 class="text-center section-title text-white">Contact Us</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <h5><i class="bi bi-geo-alt-fill me-2"></i>Our Location</h5>
-          <p>Amina Degree College, Rahim Yar Khan</p>
+          <p>Amina Degree College</p>
           <h5><i class="bi bi-envelope-fill me-2"></i>Email</h5>
           <p>info@digitalart.com</p>
           <h5><i class="bi bi-telephone-fill me-2"></i>Phone</h5>
@@ -211,12 +256,16 @@
 <!-- Footer -->
 <footer class="text-center">
   <div class="container">
-    <p>&copy; 2025 DigitalArt. All Rights Reserved.</p>
+    <p> CopyRight&copy; 2025  by<strong>Tareen Education Foundation</strong> . All Rights Reserved.</p>
+    <p>Designed & Developed by <strong>Batool Mursaleen</strong></p>
   </div>
 </footer>
 
+
+
+
 <!-- Bootstrap 5 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./src/bootstrap.js"></script>
 
 <!-- Custom JS -->
 <script>

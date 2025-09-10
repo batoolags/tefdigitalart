@@ -4,7 +4,9 @@ body {
 
 /* Navbar */
 .navbar {
-  transition: background 0.3s;
+    background: #9ec6c9;
+  color: #fff;
+  /* transition: background 0.3s; */
 }
 .navbar.scrolled {
   background: #6c63ff !important;
@@ -15,7 +17,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('https://picsum.photos/1200/600?grayscale') center/cover no-repeat;
+  background: url('./src/imgs/Hero.jpg') center/cover no-repeat;
   color: white;
   height: 90vh;
   display: flex;
@@ -57,10 +59,39 @@ body {
 }
 
 /* About */
-.about-img {
+/* .about-img {
   border-radius: 15px;
   width: 100%;
+} */
+ #about {
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
 }
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.about-img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.about-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
 
 /* Footer */
 footer {
@@ -129,4 +160,5 @@ footer {
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
 
